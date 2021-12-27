@@ -7,4 +7,4 @@
 > 最簡單使用的網站，一看就懂
 
 [GitHub](https://github.com/HelloSanta/template-docs)
-[Get Started](#docsify)
+[開始閱讀](#聖誕老人模板使用手冊)
