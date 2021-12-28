@@ -13,13 +13,64 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
+      // GENERAL
+      // -----------------------------------------------------------------
+      name: 'HelloSanta',
       repo: '',
       coverpage: true,
-      loadSidebar: true
+      loadSidebar: true,
+      subMaxLevel: 2,
+      sidebarDisplayLevel: 1,
+      logo: '/_image/hs-logo-h-56.png',
+      nameLink: '/',
+      notFoundPage: true,
+      auto2top: true,
+      topMargin: 50,
+      themeColor: '#EF4142',
+      // PLUGINS
+      // -----------------------------------------------------------------
+      // Search
+      // search: 'auto',
+      // 完整配置参数
+      search: {
+        placeholder: '搜尋',
+        noData: '找不到结果',
+        // 搜索标题的最大层级, 1 - 6
+        depth: 2,
+        hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+      },
+      // Copy Board
+      copyCode: {
+        buttonText: {
+          '/': 'Copy'
+        },
+        errorText: {
+          '/': 'Error'
+        },
+        successText: {
+          '/': 'Copied'
+        }
+      },
+      pagination: {
+        previousText: '上一頁',
+        nextText: '下一頁',
+        crossChapter: true,
+        crossChapterText: true,
+      },
     }
+    mermaid.initialize({ startOnLoad: true });
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+  <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
 </body>
 </html>
